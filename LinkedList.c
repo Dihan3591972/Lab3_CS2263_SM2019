@@ -76,7 +76,6 @@ Node_t *newNode(const char *value, Node_t *next)
   node->value = copy;
   node->next = next;
   return node;
-  
 }
 
 /**
