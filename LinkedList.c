@@ -114,6 +114,13 @@ bool push(Node_t **Stack, const char *value)
 {
   Node_t *top = *Stack;
   Node_t *new = newNode(value,top);
-  *Stack = new;
-  return true;
+  if(new == NULL)
+  {
+    return false;
+  }
+  else
+  {
+    *Stack = new;
+    return true;
+  }
 }
